@@ -1,49 +1,112 @@
 import React from "react";
 import Image from "next/image";
 import { Images } from "../../assets";
+import Link from "next/link";
+import * as Yup from "yup";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+
+interface formValues {
+  email: string;
+  password: string;
+}
+
+const LoginFormSchema = Yup.object().shape({
+  email: Yup.string().email("Invalid email address").required("Required"),
+  password: Yup.string()
+    .min(8, "Password must be at least 8 characters")
+    .required("Required"),
+  confirmPassword: Yup.string()
+    .oneOf([Yup.ref("password"), null], "Passwords must match")
+    .required("Required"),
+  agreeToTerms: Yup.boolean()
+    .oneOf([true], "You must agree to the terms")
+    .required("Required"),
+});
 
 export const LoginPage = () => {
+  const initialValues: formValues = {
+    email: "",
+    password: "",
+  };
+
+  const handleSubmit = (values: formValues) => {};
+
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center min-h-screen">
       <div>
-        <Image src={Images.login} width={400} alt="Image" />
+        <Image
+          src={Images.login}
+          width={400}
+          alt="Image"
+          className="rounded-xl"
+        />
       </div>
       <div className="flex flex-col p-10 w-1/5">
+        <div className="flex justify-center mb-8">
+          <Image src={Images.logo} width={150} alt="Image" />
+        </div>
         <h1 className="font-semibold text-3xl mb-10">Login</h1>
 
-        <form>
-          <div className="flex flex-col">
-            <label className="text-gray-500">Email Address</label>
-            <input
-              type="email"
-              placeholder="Enter Email Address"
-              className="mb-4 h-10 w-full bg-gray-100 rounded-md p-2"
-            />
-            <label className="text-gray-500">Password</label>
-            <input
-              type="password"
-              placeholder="Enter Password"
-              className="mb-4 h-10 w-full bg-gray-100 rounded-md p-2"
-            />
-          </div>
-        </form>
-        <div>
-          <div className="flex justify-between items-center mb-5">
-            <div className="flex">
+        <Formik
+          initialValues={initialValues}
+          validationSchema={LoginFormSchema}
+          onSubmit={handleSubmit}
+        >
+          <Form className="flex flex-col">
+            <div className="mb-7">
+              <label htmlFor="email" className="text-gray-500">
+                Email Address
+              </label>
+              <Field
+                type="email"
+                id="email"
+                name="email"
+                className="h-10 w-full bg-gray-100 rounded-md p-2"
+              />
+              <ErrorMessage
+                name="email"
+                component="div"
+                className="text-red-600"
+              />
+            </div>
+
+            <div className="mb-7">
+              <label htmlFor="password" className="text-gray-500">
+                Password
+              </label>
+              <Field
+                type="password"
+                id="password"
+                name="password"
+                className="h-10 w-full bg-gray-100 rounded-md p-2"
+              />
+              <ErrorMessage
+                name="password"
+                component="div"
+                className="text-red-600 mb-4"
+              />
+            </div>
+
+            <div className="flex mb-3">
               <input type="checkbox" />
-              <p className="text-xs">&nbsp;&nbsp;Keep me logged in</p>
+              <p className="text-xs">
+                &nbsp;&nbsp;I agree to the Terms and Service and Privacy Policy
+              </p>
             </div>
-            <div>
-              <p className="text-xs">Forgot Password?</p>
-            </div>
-          </div>
-          <button className="w-full h-10 bg-[#FC8A06] rounded-md  text-white font-semibold">
-            Log In
-          </button>
-          <div className="flex mt-4">
-            <p className="text-gray-500">Dont Have An Account?&nbsp;</p>
-            <p className="font-bold ">Signup</p>
-          </div>
+            <button
+              type="submit"
+              className="w-full h-10 bg-[#FC8A06] rounded-md  text-white font-semibold"
+            >
+              Log In
+            </button>
+          </Form>
+        </Formik>
+
+        <div className="flex mt-4">
+          <p className="text-gray-500">Dont Have An Account?&nbsp;</p>
+          <Link href="/signup" className="font-bold">
+            Signup
+          </Link>
         </div>
       </div>
     </div>
