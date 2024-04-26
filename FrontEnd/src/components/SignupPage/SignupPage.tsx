@@ -19,7 +19,7 @@ const SignupFormSchema = Yup.object().shape({
     .min(8, "Password must be at least 8 characters")
     .required("Required"),
   confirmPassword: Yup.string()
-    .oneOf([Yup.ref("password"), null], "Passwords must match")
+    .oneOf([Yup.ref("password")], "Passwords must match")
     .required("Required"),
   agreeToTerms: Yup.boolean()
     .oneOf([true], "You must agree to the terms")

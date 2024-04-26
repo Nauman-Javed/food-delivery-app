@@ -1,8 +1,8 @@
-import { LandingPage } from "@/collection";
+import { LandingPage } from "@/components";
 
 export default function Home() {
   return (
-    <main className="bg-slate-500">
+    <main>
       <LandingPage />
     </main>
   );
