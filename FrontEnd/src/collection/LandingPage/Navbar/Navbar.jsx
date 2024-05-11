@@ -5,7 +5,7 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <div className="max-w-[1528px] rounded-b-xl m-auto flex justify-between items-center h-[64px] mt-10">
+    <div className="rounded-b-xl flex justify-between items-center h-[64px] mt-10">
       <div>
         <Image src={Images.logo} width={185} alt="logo" />
       </div>

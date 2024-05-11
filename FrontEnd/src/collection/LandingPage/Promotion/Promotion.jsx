@@ -4,7 +4,7 @@ import React from "react";
 
 export const Promotion = () => {
   return (
-    <div className="max-w-[1528px] h-[50px] rounded-b-xl bg-gray-100 m-auto flex justify-between items-center">
+    <div className="h-[50px] rounded-b-xl bg-gray-100  flex justify-between items-center">
       <div className="flex items-center justify-between w-full">
         <div>
           <p className="ml-16 text-sm font-semibold">

@@ -26,6 +26,11 @@ import tiktok from "./TikTok.svg";
 import tracking from "./Tracking.svg";
 import login from "./Login.jpg";
 import signup from "./Signup.jpg";
+import orangeBG from "./OrangeBG.svg";
+import group1 from "./group1.svg";
+import group2 from "./group2.svg";
+import group3 from "./group3.svg";
+import { OrderingAppImages } from "./OrderingApp";
 
 export const Images = {
   appStore,
@@ -56,4 +61,11 @@ export const Images = {
   tracking,
   login,
   signup,
+  orangeBG,
+  group1,
+  group2,
+  group3,
+  orderingApp: OrderingAppImages,
 };
+
+export * from "./OrderingApp";
