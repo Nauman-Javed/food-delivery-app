@@ -13,7 +13,15 @@ export const Fotter = () => {
             <Image src={Images.appStore} width={350} />
             <p>Company # 490039-445, Registered with House of companies.</p>
           </div>
-
+          <div>
+            <p className="font-bold">Get Exclusive Deals in your Inbox</p>
+            <div className="flex justify-start items-center gap-4 mt-7">
+              <Image src={Images.facebook} width={40} />
+              <Image src={Images.instagram} width={40} />
+              <Image src={Images.tiktok} width={40} />
+              <Image src={Images.snapchat} width={40} />
+            </div>
+          </div>
           <div className="flex justify-center items-center gap-16 mr-24">
             <div className="flex flex-col gap-3 ">
               <p className="text-xl font-bold">Legal Pages</p>

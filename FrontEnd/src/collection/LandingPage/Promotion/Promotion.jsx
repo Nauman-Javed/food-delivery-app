@@ -27,20 +27,6 @@ export const Promotion = () => {
           <p className="text-xs font-semibold text-[#FC8A06] underline mr-12">
             Change Locations
           </p>
-          <div className="bg-custom-green rounded-b-xl flex items-center justify-center">
-            <div className="p-3">
-              <Image src={Images.basket} alt="cart" width={25} />
-            </div>
-            <div className="p-3 ">
-              <p className="text-white text-xs font-semibold">23 Items</p>
-            </div>
-            <div className="p-3">
-              <p className="text-white text-xs font-semibold">GBP 79.89</p>
-            </div>
-            <div className="p-3">
-              <Image src={Images.forwardButton} alt="cart" width={25} />
-            </div>
-          </div>
         </div>
       </div>
     </div>
