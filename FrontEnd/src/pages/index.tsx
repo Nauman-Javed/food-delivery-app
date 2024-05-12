@@ -1,9 +1,9 @@
-import { LandingPage } from "@/components";
+import { LandingPageContainer } from "@/collection";
 
 export default function Home() {
   return (
     <main>
-      <LandingPage />
+      <LandingPageContainer />
     </main>
   );
 }

@@ -1,5 +1,5 @@
 import {
-  Fotter,
+  Footer,
   Hero,
   Navbar,
   Ordering,
@@ -10,7 +10,7 @@ import {
 } from "@/collection";
 import React from "react";
 
-export const LandingPage = () => {
+export const LandingPageContainer = () => {
   return (
     <main>
       <div className="max-w-[1528px] m-auto ">
@@ -22,7 +22,7 @@ export const LandingPage = () => {
         <Testimonial />
       </div>
       <div>
-        <Fotter />
+        <Footer />
       </div>
     </main>
   );

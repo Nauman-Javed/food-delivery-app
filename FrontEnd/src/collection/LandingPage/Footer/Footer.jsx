@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { footerLinks } from "./footerLinks";
 
-export const Fotter = () => {
+export const Footer = () => {
   return (
     <div className="mt-16">
       <div className="bg-[#D9D9D9] ">
@@ -26,16 +26,16 @@ export const Fotter = () => {
             <div className="flex flex-col gap-3 ">
               <p className="text-xl font-bold">Legal Pages</p>
               <ul className="flex flex-col gap-3 underline">
-                {footerLinks[0].links.map((link) => (
-                  <li>{link.name}</li>
+                {footerLinks[0].links.map((index, link) => (
+                  <li key={index}>{link.name}</li>
                 ))}
               </ul>
             </div>
             <div className="flex flex-col gap-3">
               <p className="text-xl font-bold">Important Links</p>
               <ul className="flex flex-col gap-3 underline">
-                {footerLinks[1].links.map((link) => (
-                  <li>{link.name}</li>
+                {footerLinks[1].links.map((index, link) => (
+                  <li key={index}>{link.name}</li>
                 ))}
               </ul>
             </div>

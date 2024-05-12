@@ -4,4 +4,5 @@ export * from "./Hero";
 export * from "./PopularRestaurant";
 export * from "./Ordering";
 export * from "./Testimonial";
-export * from "./Fotter";
+export * from "./Footer";
+export * from "./LandingPageContainer";
