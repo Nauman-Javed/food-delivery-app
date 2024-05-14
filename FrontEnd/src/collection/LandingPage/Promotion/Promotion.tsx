@@ -1,4 +1,5 @@
 import { Images } from "@/assets";
+import StyledTypography from "@/components/Text/StyledTypography";
 import Image from "next/image";
 import React from "react";
 
@@ -21,12 +22,20 @@ export const Promotion = () => {
             width={20}
             className="mr-3"
           />
-          <p className="text-sm font-semibold mr-3">
-            Regent Street, A4, A4201, London
-          </p>
-          <p className="text-xs font-semibold text-[#FC8A06] underline mr-12">
-            Change Locations
-          </p>
+
+          <StyledTypography
+            text="Regent Street, A4, A4201, London"
+            marginRight={"12px"}
+            fontSize={"12px"}
+            fontWeight={"bold"}
+          />
+          <StyledTypography
+            text="Change Locations"
+            color={"#FC8A06"}
+            marginRight={"48px"}
+            fontSize={"12px"}
+            fontWeight={"bold"}
+          />
         </div>
       </div>
     </div>

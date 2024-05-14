@@ -1,6 +1,6 @@
 import { Images } from "@/assets";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import { footerLinks } from "./footerLinks";
 
 export const Footer = () => {
@@ -9,33 +9,33 @@ export const Footer = () => {
       <div className="bg-[#D9D9D9] ">
         <div className="flex justify-between items-center p-24 ml-24">
           <div className="flex flex-col justify-center items-start gap-6">
-            <Image src={Images.logo} width={250} />
-            <Image src={Images.appStore} width={350} />
+            <Image src={Images.logo} width={250} alt="logo" />
+            <Image src={Images.appStore} width={350} alt="appStore" />
             <p>Company # 490039-445, Registered with House of companies.</p>
           </div>
           <div>
             <p className="font-bold">Get Exclusive Deals in your Inbox</p>
             <div className="flex justify-start items-center gap-4 mt-7">
-              <Image src={Images.facebook} width={40} />
-              <Image src={Images.instagram} width={40} />
-              <Image src={Images.tiktok} width={40} />
-              <Image src={Images.snapchat} width={40} />
+              <Image src={Images.facebook} width={40} alt="facebook" />
+              <Image src={Images.instagram} width={40} alt="instagram" />
+              <Image src={Images.tiktok} width={40} alt="tiktok" />
+              <Image src={Images.snapchat} width={40} alt="snapchat" />
             </div>
           </div>
           <div className="flex justify-center items-center gap-16 mr-24">
             <div className="flex flex-col gap-3 ">
               <p className="text-xl font-bold">Legal Pages</p>
               <ul className="flex flex-col gap-3 underline">
-                {footerLinks[0].links.map((index, link) => (
-                  <li key={index}>{link.name}</li>
+                {footerLinks[0].links.map((link) => (
+                  <li key={link.id}>{link.name}</li>
                 ))}
               </ul>
             </div>
             <div className="flex flex-col gap-3">
               <p className="text-xl font-bold">Important Links</p>
               <ul className="flex flex-col gap-3 underline">
-                {footerLinks[1].links.map((index, link) => (
-                  <li key={index}>{link.name}</li>
+                {footerLinks[1].links.map((link) => (
+                  <li key={link.id}>{link.name}</li>
                 ))}
               </ul>
             </div>
