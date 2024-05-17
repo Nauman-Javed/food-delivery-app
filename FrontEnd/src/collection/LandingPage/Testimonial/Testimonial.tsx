@@ -12,6 +12,7 @@ export const Testimonial = () => {
           fontWeight={"normal"}
           fontSize={"40px"}
           lineHeight={"50px"}
+          className="cursor-default"
         />
         <StyledTypography
           text="Registered Riders"
@@ -19,6 +20,7 @@ export const Testimonial = () => {
           color={"white"}
           fontWeight={"normal"}
           fontSize={"18px"}
+          className="cursor-default"
         />
       </div>
       <div className="flex flex-col justify-center items-center">
@@ -29,6 +31,7 @@ export const Testimonial = () => {
           fontWeight={"normal"}
           fontSize={"48px"}
           lineHeight={"50px"}
+          className="cursor-default"
         />
         <StyledTypography
           text="Orders Delivered"
@@ -36,6 +39,7 @@ export const Testimonial = () => {
           color={"white"}
           fontWeight={"normal"}
           fontSize={"18px"}
+          className="cursor-default"
         />
       </div>
       <div className="flex flex-col justify-center items-center">
@@ -46,6 +50,7 @@ export const Testimonial = () => {
           fontWeight={"normal"}
           fontSize={"48px"}
           lineHeight={"50px"}
+          className="cursor-default"
         />
         <StyledTypography
           text="Restaurants Partnered"
@@ -53,6 +58,7 @@ export const Testimonial = () => {
           color={"white"}
           fontWeight={"normal"}
           fontSize={"18px"}
+          className="cursor-default"
         />
       </div>
       <div className="flex flex-col justify-center items-center">
@@ -63,6 +69,7 @@ export const Testimonial = () => {
           fontWeight={"normal"}
           fontSize={"48px"}
           lineHeight={"50px"}
+          className="cursor-default"
         />
         <StyledTypography
           text="Food items"
@@ -70,6 +77,7 @@ export const Testimonial = () => {
           color={"white"}
           fontWeight={"normal"}
           fontSize={"18px"}
+          className="cursor-default"
         />
       </div>
     </div>

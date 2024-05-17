@@ -1,5 +1,6 @@
 import { Images } from "@/assets";
 import StyledTypography from "@/components/Text/StyledTypography";
+
 import Image from "next/image";
 import React from "react";
 
@@ -10,18 +11,21 @@ export const Hero = () => {
         <StyledTypography
           text="Order Restaurant food, takeaway and groceries."
           variant="subtitle1"
+          className="cursor-default"
         />
         <div>
           <StyledTypography
             text="Feast Your Senses,"
             variant="h2"
             fontWeight={"bold"}
+            className="cursor-default"
           />
           <StyledTypography
             text="Fast and Fresh"
             variant="h2"
             fontWeight={"bold"}
             color={"#FC8A06"}
+            className="cursor-default"
           />
         </div>
       </div>
