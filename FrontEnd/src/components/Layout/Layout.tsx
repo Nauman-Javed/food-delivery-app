@@ -1,4 +1,6 @@
-import { Footer, Navbar, Promotion } from "@/collection";
+import { Footer } from "@/collection/Global/Footer/Footer";
+import { Navbar } from "@/collection/Global/Navbar/Navbar";
+import { Promotion } from "@/collection/Global/Promotion/Promotion";
 import React, { ReactNode } from "react";
 
 interface LayoutProps {
