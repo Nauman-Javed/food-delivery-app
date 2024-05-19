@@ -1,4 +1,4 @@
-import { Discount } from "@/collection/Restaurant/Discount/Discount";
+import { Hero } from "@/collection/Restaurant";
 import { Layout } from "@/components/Layout/Layout";
 import React from "react";
 
@@ -6,7 +6,7 @@ const restaurant = () => {
   return (
     <main>
       <Layout>
-        <Discount />
+        <Hero />
       </Layout>
     </main>
   );

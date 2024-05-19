@@ -6,7 +6,7 @@ import React from "react";
 
 export const Hero = () => {
   return (
-    <div className="mt-5  h-[100] border-2 border-gray-200 rounded-lg flex justify-between items-center overflow-hidden">
+    <div className="mt-5  h-[477px] border-2 border-gray-200 rounded-lg flex justify-between items-center overflow-hidden">
       <div className="p-10 my-auto flex flex-col gap-2 ">
         <StyledTypography
           text="Order Restaurant food, takeaway and groceries."
@@ -29,8 +29,8 @@ export const Hero = () => {
           />
         </div>
       </div>
-      <div className="relative top-10">
-        <Image src={Images.orangeBG} alt="orangeBackGround" />
+      <div className="relative top-20 left-20">
+        <Image src={Images.landingPage.orangeBG} alt="orangeBackGround" />
       </div>
     </div>
   );

@@ -10,8 +10,8 @@ export const Footer = () => {
       <div className="bg-[#D9D9D9] ">
         <div className="flex justify-between items-center p-24 ml-24">
           <div className="flex flex-col justify-center items-start gap-6">
-            <Image src={Images.logo} width={250} alt="logo" />
-            <Image src={Images.appStore} width={350} alt="appStore" />
+            <Image src={Images.global.logo} width={250} alt="logo" />
+            <Image src={Images.global.appStore} width={350} alt="appStore" />
             <StyledTypography
               variant="subtitle2"
               text="Company # 490039-445, Registered with House of companies."
@@ -25,10 +25,10 @@ export const Footer = () => {
               className="font-bold cursor-default"
             />
             <div className="flex justify-start items-center gap-4 mt-7">
-              <Image src={Images.facebook} width={40} alt="facebook" />
-              <Image src={Images.instagram} width={40} alt="instagram" />
-              <Image src={Images.tiktok} width={40} alt="tiktok" />
-              <Image src={Images.snapchat} width={40} alt="snapchat" />
+              <Image src={Images.global.facebook} width={40} alt="facebook" />
+              <Image src={Images.global.instagram} width={40} alt="instagram" />
+              <Image src={Images.global.tiktok} width={40} alt="tiktok" />
+              <Image src={Images.global.snapchat} width={40} alt="snapchat" />
             </div>
           </div>
           <div className="flex justify-center items-center gap-16 mr-24">
