@@ -14,22 +14,22 @@ export const PopularRestaurant = () => {
       />
       <div className="flex justify-between items-center">
         <Link href="/restaurant">
-          <Image src={Images.mcdonald} alt="" />
+          <Image src={Images.landingPage.mcdonald} alt="" />
         </Link>
         <Link href="/restaurant">
-          <Image src={Images.papaJohn} alt="" />
+          <Image src={Images.landingPage.papaJohn} alt="" />
         </Link>
         <Link href="/restaurant">
-          <Image src={Images.kfc} alt="" />
+          <Image src={Images.landingPage.kfc} alt="" />
         </Link>
         <Link href="/restaurant">
-          <Image src={Images.texas} alt="" />
+          <Image src={Images.landingPage.texas} alt="" />
         </Link>
         <Link href="/restaurant">
-          <Image src={Images.burgerKing} alt="" />
+          <Image src={Images.landingPage.burgerKing} alt="" />
         </Link>
         <Link href="/restaurant">
-          <Image src={Images.shaurma} alt="" />
+          <Image src={Images.landingPage.shaurma} alt="" />
         </Link>
       </div>
     </div>

@@ -17,7 +17,7 @@ export const Promotion = () => {
         </div>
         <div className="flex items-center h-full">
           <Image
-            src={Images.locationSvg}
+            src={Images.global.location}
             alt="location"
             width={20}
             className="mr-3"
