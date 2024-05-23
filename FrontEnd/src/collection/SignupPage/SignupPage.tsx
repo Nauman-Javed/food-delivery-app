@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { Images } from "../../assets";
 import Link from "next/link";
 import * as Yup from "yup";
 
@@ -40,15 +39,21 @@ export const SignupPage = () => {
     <div className="flex justify-center items-center min-h-screen">
       <div>
         <Image
-          src={Images.signup}
+          src={"/assets/LandingPage/signup.jpg"}
           width={400}
+          height={100}
           alt="Image"
           className="rounded-xl"
         />
       </div>
       <div className="flex flex-col p-10 w-1/5">
         <div className="flex justify-center mb-8">
-          <Image src={Images.logo} width={150} alt="Image" />
+          <Image
+            src={"/assets/global/LOGO.svg"}
+            width={150}
+            height={100}
+            alt="Image"
+          />
         </div>
         <h1 className="font-semibold text-3xl mb-10">Signup</h1>
 
