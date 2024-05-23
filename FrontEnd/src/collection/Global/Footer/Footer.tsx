@@ -7,8 +7,8 @@ export const Footer = () => {
   return (
     <div className="mt-16">
       <div className="bg-[#D9D9D9] ">
-        <div className="flex justify-between items-center flex-col md:flex-row p-24 ml-24">
-          <div className="flex flex-col justify-center items-start gap-6">
+        <div className="flex justify-between items-center flex-col md:flex-row p-16  lg:p-24 lg:ml-24">
+          <div className="flex flex-col justify-center items-start gap-10  md:gap-6">
             <Image
               src={"/assets/Global/logo.svg"}
               width={250}
@@ -24,16 +24,16 @@ export const Footer = () => {
             <StyledTypography
               variant="subtitle2"
               text="Company # 490039-445, Registered with House of companies."
-              className="cursor-default"
+              className="cursor-default text-center md:text-start"
             />
           </div>
-          <div>
+          <div className="my-14">
             <StyledTypography
               variant="subtitle2"
               text="Get Exclusive Deals in your Inbox"
               className="font-bold cursor-default"
             />
-            <div className="flex justify-start items-center gap-4 mt-7">
+            <div className="flex justify-start items-center gap-4 mt-3  md:mt-7">
               <Image
                 src={"/assets/Global/facebook.svg"}
                 width={40}
@@ -95,7 +95,7 @@ export const Footer = () => {
             text="Order.uk Copyright 2024, All Rights Reserved."
             className="ml-9 cursor-default"
           />
-          <div className="flex mr-9 gap-5 hidden md:block">
+          <div className="mr-9 gap-5 hidden md:flex">
             <StyledTypography
               variant="subtitle2"
               text="Privacy Policy"
