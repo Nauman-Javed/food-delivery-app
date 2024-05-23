@@ -29,7 +29,7 @@ export const Ordering = () => {
           />
         </div>
 
-        <div className="flex justify-center items-center bg-black rounded-full p-4 ">
+        <div className="flex justify-center items-center bg-black rounded-full md:p-4">
           <StyledTypography
             variant="subtitle2"
             text="Personalised"
