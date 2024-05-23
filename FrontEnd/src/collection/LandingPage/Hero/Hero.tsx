@@ -1,6 +1,4 @@
-import { Images } from "@/assets";
 import StyledTypography from "@/components/Text/StyledTypography";
-
 import Image from "next/image";
 import React from "react";
 
@@ -30,7 +28,12 @@ export const Hero = () => {
         </div>
       </div>
       <div className="relative top-20 left-20">
-        <Image src={Images.landingPage.orangeBG} alt="orangeBackGround" />
+        <Image
+          src={"/assets/LandingPage/OrangeBG.svg"}
+          alt="orangeBackGround"
+          width={625}
+          height={100}
+        />
       </div>
     </div>
   );

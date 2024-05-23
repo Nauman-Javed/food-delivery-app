@@ -1,11 +1,10 @@
-import { Images } from "@/assets";
 import StyledTypography from "@/components/Text/StyledTypography";
 import Image from "next/image";
 import React from "react";
 
 export const Promotion = () => {
   return (
-    <div className="h-[50px] rounded-b-xl bg-gray-100  flex justify-between items-center">
+    <div className="h-[50px] rounded-b-xl bg-gray-100  flex justify-between items-center ">
       <div className="flex items-center justify-between w-full">
         <div>
           <p className="ml-16 text-sm font-semibold cursor-default">
@@ -17,9 +16,10 @@ export const Promotion = () => {
         </div>
         <div className="flex items-center h-full">
           <Image
-            src={Images.global.location}
+            src={"/assets/Global/Location.svg"}
             alt="location"
             width={20}
+            height={100}
             className="mr-3"
           />
 

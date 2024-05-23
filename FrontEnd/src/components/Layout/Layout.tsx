@@ -10,7 +10,7 @@ interface LayoutProps {
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <main>
-      <div className="max-w-[1528px] m-auto min-h-screen">
+      <div className="max-w-[1528px]  m-auto min-h-screen">
         <Promotion />
         <Navbar />
         {children}

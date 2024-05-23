@@ -1,4 +1,3 @@
-import { Images } from "@/assets";
 import StyledTypography from "@/components/Text/StyledTypography";
 import Image from "next/image";
 import React from "react";
@@ -7,12 +6,18 @@ export const Ordering = () => {
   return (
     <div className="mt-28 bg-[#E0E1DC]  rounded-md flex justify-between items-center h-[600px]">
       <div className="relative left-6 -top-10 ">
-        <Image src={Images.orderingApp.person} alt="person" />
+        <Image
+          src={"/assets/OrderingApp/2Person.svg"}
+          alt="person"
+          width={832}
+          height={10}
+        />
       </div>
       <div className="flex justify-center items-center flex-col gap-5 mr-[150px] ">
         <div className="flex justify-center items-center">
           <Image
-            src={Images.global.logo}
+            src={"/assets/Global/LOGO.svg"}
+            height={10}
             width={200}
             className="h-auto"
             alt="logo"
@@ -44,7 +49,12 @@ export const Ordering = () => {
             className="text-lg font-semibold cursor-default"
           />
         </div>
-        <Image src={Images.global.appStore} alt="appStore" />
+        <Image
+          src={"/assets/Global/app-store-badges-en 1.svg"}
+          alt="appStore"
+          width={412}
+          height={10}
+        />
       </div>
     </div>
   );

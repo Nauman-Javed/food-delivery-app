@@ -1,4 +1,3 @@
-import { Images } from "@/assets";
 import StyledTypography from "@/components/Text/StyledTypography";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,22 +13,52 @@ export const PopularRestaurant = () => {
       />
       <div className="flex justify-between items-center">
         <Link href="/restaurant">
-          <Image src={Images.landingPage.mcdonald} alt="" />
+          <Image
+            src={"/assets/LandingPage/Group 16.svg"}
+            alt=""
+            width={238}
+            height={10}
+          />
         </Link>
         <Link href="/restaurant">
-          <Image src={Images.landingPage.papaJohn} alt="" />
+          <Image
+            src={"/assets/LandingPage/Group 17.svg"}
+            alt=""
+            width={238}
+            height={10}
+          />
         </Link>
         <Link href="/restaurant">
-          <Image src={Images.landingPage.kfc} alt="" />
+          <Image
+            src={"/assets/LandingPage/Group 18.svg"}
+            alt=""
+            width={238}
+            height={10}
+          />
         </Link>
         <Link href="/restaurant">
-          <Image src={Images.landingPage.texas} alt="" />
+          <Image
+            src={"/assets/LandingPage/Group 19.svg"}
+            alt=""
+            width={238}
+            height={10}
+          />
         </Link>
         <Link href="/restaurant">
-          <Image src={Images.landingPage.burgerKing} alt="" />
+          <Image
+            src={"/assets/LandingPage/Group 20.svg"}
+            alt=""
+            width={238}
+            height={10}
+          />
         </Link>
         <Link href="/restaurant">
-          <Image src={Images.landingPage.shaurma} alt="" />
+          <Image
+            src={"/assets/LandingPage/Group 21.svg"}
+            alt=""
+            width={238}
+            height={10}
+          />
         </Link>
       </div>
     </div>

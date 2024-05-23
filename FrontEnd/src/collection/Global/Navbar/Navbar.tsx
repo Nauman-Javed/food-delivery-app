@@ -1,4 +1,3 @@
-import { Images } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,7 +9,12 @@ export const Navbar = () => {
     <div className="rounded-b-xl flex justify-between items-center h-[64px] mt-10">
       <div>
         <Link href="/">
-          <Image src={Images.global.logo} width={185} alt="logo" />
+          <Image
+            src={"/assets/Global/logo.svg"}
+            width={185}
+            height={100}
+            alt="logo"
+          />
         </Link>
       </div>
       <div>
@@ -19,12 +23,22 @@ export const Navbar = () => {
             href="/login"
             className="flex items-center gap-2 bg-black text-white rounded-full px-8 py-3"
           >
-            <Image src={Images.global.user} width={30} alt="user" />{" "}
+            <Image
+              src={"/assets/Global/Male User.svg"}
+              width={30}
+              height={100}
+              alt="user"
+            />{" "}
             Login/Signup
           </Link>
           <div className="bg-custom-green rounded-lg flex items-center justify-center">
             <div className="p-3">
-              <Image src={Images.global.basket} alt="cart" width={25} />
+              <Image
+                src={"/assets/Global/Full Shopping Basket.svg"}
+                alt="cart"
+                width={25}
+                height={100}
+              />
             </div>
           </div>
         </nav>
