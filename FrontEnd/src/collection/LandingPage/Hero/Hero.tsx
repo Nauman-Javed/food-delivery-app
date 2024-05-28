@@ -4,30 +4,25 @@ import React from "react";
 
 export const Hero = () => {
   return (
-    <div className="mt-5  h-[477px] border-2 border-gray-200 rounded-lg flex justify-between items-center overflow-hidden">
-      <div className="p-10 my-auto flex flex-col gap-2 ">
+    <div className="mt-16 md:mt-5 h-[283px] md:h-[477px] border-2 border-gray-200 rounded-xl md:rounded-lg flex justify-between items-center overflow-hidden bg-[#E2E2E2] md:bg-white mx-3 md:mx-0">
+      <div className="p-10 my-auto flex flex-col gap-0 md:gap-2 items-center md:items-start">
         <StyledTypography
           text="Order Restaurant food, takeaway and groceries."
-          variant="subtitle1"
-          className="cursor-default"
+          className="cursor-default text-[14px] md:text-xl"
         />
-        <div>
-          <StyledTypography
-            text="Feast Your Senses,"
-            variant="h2"
-            fontWeight={"bold"}
-            className="cursor-default"
-          />
-          <StyledTypography
-            text="Fast and Fresh"
-            variant="h2"
-            fontWeight={"bold"}
-            color={"#FC8A06"}
-            className="cursor-default"
-          />
-        </div>
+        <StyledTypography
+          text="Feast Your Senses,"
+          fontWeight={"bold"}
+          className="cursor-default text-[34px] md:text-6xl"
+        />
+        <StyledTypography
+          text="Fast and Fresh"
+          fontWeight={"bold"}
+          color={"#FC8A06"}
+          className="cursor-default text-[34px] md:text-6xl"
+        />
       </div>
-      <div className="relative top-20 left-20">
+      <div className="relative top-20 left-20 hidden md:block">
         <Image
           src={"/assets/LandingPage/OrangeBG.svg"}
           alt="orangeBackGround"
