@@ -37,7 +37,7 @@ export const SignupPage = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <div>
+      <div className="hidden md:block">
         <Image
           src={"/assets/LandingPage/signup.jpg"}
           width={400}
@@ -46,7 +46,7 @@ export const SignupPage = () => {
           className="rounded-xl"
         />
       </div>
-      <div className="flex flex-col p-10 w-1/5">
+      <div className="flex flex-col md:p-10 w-4/5 md:w-1/5">
         <div className="flex justify-center mb-8">
           <Image
             src={"/assets/global/LOGO.svg"}
