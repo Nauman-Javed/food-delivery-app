@@ -32,7 +32,7 @@ export const LoginPage = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <div>
+      <div className="hidden md:block">
         <Image
           src={"/assets/LandingPage/login.jpg"}
           width={400}
@@ -41,7 +41,7 @@ export const LoginPage = () => {
           className="rounded-xl"
         />
       </div>
-      <div className="flex flex-col p-10 w-1/5">
+      <div className="flex flex-col p-0 md:p-10 w-4/5 md:w-1/5">
         <div className="flex justify-center mb-8">
           <Image
             src={"/assets/global/LOGO.svg"}

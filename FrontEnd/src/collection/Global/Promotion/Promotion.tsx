@@ -48,12 +48,14 @@ export const Promotion = () => {
       </div>
       <div className="h-[100px] flex justify-between items-center md:hidden">
         <div className="ml-4">
-          <Image
-            src={"/assets/Global/LOGO.svg"}
-            alt="Logo"
-            width={154}
-            height={100}
-          />
+          <Link href="/">
+            <Image
+              src={"/assets/Global/LOGO.svg"}
+              alt="Logo"
+              width={154}
+              height={100}
+            />
+          </Link>
         </div>
         <div className=" p-4 border-l-2 h-full">
           <Image
