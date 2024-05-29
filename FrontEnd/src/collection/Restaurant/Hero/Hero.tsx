@@ -8,13 +8,13 @@ export const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="relative h-full w-full">
           <img
-            src="/assets/Restaurant/background.svg"
+            src="/assets/RestaurantPage/background.svg"
             alt="Restaurant background"
             className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 z-10 flex justify-center items-center">
             <Image
-              src="/assets/Restaurant/logo.svg"
+              src="/assets/RestaurantPage/logo.svg"
               alt="Restaurant logo"
               width={40}
               height={40}
@@ -52,14 +52,14 @@ export const Hero = () => {
       </div>
       <div className="relative right-16 z-20">
         <Image
-          src="/assets/Restaurant/smallLogo.svg"
+          src="/assets/RestaurantPage/smallLogo.svg"
           alt="Restaurant logo"
           width={581}
           height={581}
         />
         <div className="absolute top-0 right-0">
           <Image
-            src="/assets/Restaurant/rating.svg"
+            src="/assets/RestaurantPage/rating.svg"
             alt="Rating"
             width={136}
             height={136}

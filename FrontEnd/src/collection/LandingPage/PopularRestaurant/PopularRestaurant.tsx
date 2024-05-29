@@ -1,3 +1,4 @@
+import Restaurants from "@/components/Restaurants/Restaurants";
 import StyledTypography from "@/components/Text/StyledTypography";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +16,7 @@ export const PopularRestaurant = () => {
         <Link href="/restaurant">
           <div className="w-[150px] sm:w-[150px] md:w-[238px]">
             <Image
-              src={"/assets/LandingPage/Group 16.svg"}
+              src={"/assets/RestaurantNames/mcdonalds.svg"}
               alt=""
               width={238}
               height={10}
@@ -26,7 +27,7 @@ export const PopularRestaurant = () => {
         <Link href="/restaurant">
           <div className="w-[150px] sm:w-[150px] md:w-[238px]">
             <Image
-              src={"/assets/LandingPage/Group 17.svg"}
+              src={"/assets/RestaurantNames/papaJohns.svg"}
               alt=""
               width={238}
               height={10}
@@ -37,7 +38,7 @@ export const PopularRestaurant = () => {
         <Link href="/restaurant">
           <div className="w-[150px] sm:w-[150px] md:w-[238px]">
             <Image
-              src={"/assets/LandingPage/Group 18.svg"}
+              src={"/assets/RestaurantNames/KFC.svg"}
               alt=""
               width={238}
               height={10}
@@ -48,7 +49,7 @@ export const PopularRestaurant = () => {
         <Link href="/restaurant">
           <div className="w-[150px] sm:w-[150px] md:w-[238px]">
             <Image
-              src={"/assets/LandingPage/Group 19.svg"}
+              src={"/assets/RestaurantNames/texas.svg"}
               alt=""
               width={238}
               className="w-[350px] md:w-[238px]"
@@ -59,7 +60,7 @@ export const PopularRestaurant = () => {
         <Link href="/restaurant">
           <div className="w-[150px] sm:w-[150px] md:w-[238px]">
             <Image
-              src={"/assets/LandingPage/Group 20.svg"}
+              src={"/assets/RestaurantNames/burgerKing.svg"}
               alt=""
               width={238}
               height={10}
@@ -70,7 +71,7 @@ export const PopularRestaurant = () => {
         <Link href="/restaurant">
           <div className="w-[150px] sm:w-[150px] md:w-[238px]">
             <Image
-              src={"/assets/LandingPage/Group 21.svg"}
+              src={"/assets/RestaurantNames/Shaurma.svg"}
               alt=""
               width={238}
               height={10}
