@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import * as Yup from "yup";
 
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Field, ErrorMessage } from "formik";
+import { StyledForm } from "@/components/Form/StyledForm";
 
 interface formValues {
   email: string;
@@ -57,77 +58,67 @@ export const SignupPage = () => {
         </div>
         <h1 className="font-semibold text-3xl mb-10">Signup</h1>
 
-        <Formik
+        <StyledForm
           initialValues={initialValues}
           validationSchema={SignupFormSchema}
           onSubmit={handleSubmit}
+          buttonText="Signup"
         >
-          <Form className="flex flex-col">
-            <div className="mb-3">
-              <label htmlFor="email" className="text-gray-500">
-                Email Address
-              </label>
-              <Field
-                type="email"
-                id="email"
-                name="email"
-                className="h-10 w-full bg-gray-100 rounded-md p-2"
-              />
-              <ErrorMessage
-                name="email"
-                component="div"
-                className="text-red-600 "
-              />
-            </div>
-
-            <div className="mb-3">
-              <label htmlFor="password" className="text-gray-500">
-                Password
-              </label>
-              <Field
-                type="password"
-                id="password"
-                name="password"
-                className="h-10 w-full bg-gray-100 rounded-md p-2"
-              />
-              <ErrorMessage
-                name="password"
-                component="div"
-                className="text-red-600 "
-              />
-            </div>
-
-            <div className="mb-3">
-              <label htmlFor="email" className="text-gray-500">
-                Confirm Password
-              </label>
-              <Field
-                type="password"
-                id="confirmPassword"
-                name="confirmPassword"
-                className="h-10 w-full bg-gray-100 rounded-md p-2"
-              />
-              <ErrorMessage
-                name="confirmPassword"
-                component="div"
-                className="text-red-600 "
-              />
-            </div>
-
-            <div className="flex mb-3">
-              <input type="checkbox" />
-              <p className="text-xs">
-                &nbsp;&nbsp;I agree to the Terms and Service and Privacy Policy
-              </p>
-            </div>
-            <button
-              type="submit"
-              className="w-full h-10 bg-[#FC8A06] rounded-md  text-white font-semibold"
-            >
-              Signup
-            </button>
-          </Form>
-        </Formik>
+          <div className="mb-3">
+            <label htmlFor="email" className="text-gray-500">
+              Email Address
+            </label>
+            <Field
+              type="email"
+              id="email"
+              name="email"
+              className="h-10 w-full bg-gray-100 rounded-md p-2"
+            />
+            <ErrorMessage
+              name="email"
+              component="div"
+              className="text-red-600"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="password" className="text-gray-500">
+              Password
+            </label>
+            <Field
+              type="password"
+              id="password"
+              name="password"
+              className="h-10 w-full bg-gray-100 rounded-md p-2"
+            />
+            <ErrorMessage
+              name="password"
+              component="div"
+              className="text-red-600"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="confirmPassword" className="text-gray-500">
+              Confirm Password
+            </label>
+            <Field
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              className="h-10 w-full bg-gray-100 rounded-md p-2"
+            />
+            <ErrorMessage
+              name="confirmPassword"
+              component="div"
+              className="text-red-600"
+            />
+          </div>
+          <div className="flex mb-3">
+            <input type="checkbox" />
+            <p className="text-xs">
+              &nbsp;&nbsp;I agree to the Terms and Service and Privacy Policy
+            </p>
+          </div>
+        </StyledForm>
 
         <div className="flex mt-4">
           <p className="text-gray-500">Already Have An Account?&nbsp;</p>
