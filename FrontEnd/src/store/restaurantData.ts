@@ -1,16 +1,15 @@
-export interface FoodItem {
-  name: string;
-  description: string;
-  price: number;
-  image: string;
-}
-
 export interface RestaurantState {
   name: string;
   image: string;
   slug: string;
   path: string;
   foodItems: FoodItem[];
+}
+export interface FoodItem {
+  name: string;
+  description: string;
+  price: number;
+  image: string;
 }
 
 export const restaurantData: RestaurantState[] = [
