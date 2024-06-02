@@ -475,7 +475,7 @@ export const restaurantData: RestaurantProps[] = [
       },
       {
         id: "i5",
-        name: "Royal Cheese Burger with extra Fries",
+        name: "The classics for 3",
         description:
           "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
         price: 23.1,
