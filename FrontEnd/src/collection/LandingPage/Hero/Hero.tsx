@@ -5,7 +5,7 @@ import React from "react";
 export const Hero = () => {
   return (
     <div className="mt-16 md:mt-5 h-[283px] md:h-[477px] border-2 border-gray-200 rounded-xl md:rounded-lg flex justify-between items-center overflow-hidden bg-[#E2E2E2] md:bg-white mx-3 md:mx-0">
-      <div className="p-10 my-auto flex flex-col gap-0 md:gap-2 items-center md:items-start">
+      <div className="p-4 md:p-10 my-auto flex flex-col gap-0 md:gap-2 items-center md:items-start w-full md:w-auto">
         <StyledTypography
           text="Order Restaurant food, takeaway and groceries."
           className="cursor-default text-[14px] md:text-xl"

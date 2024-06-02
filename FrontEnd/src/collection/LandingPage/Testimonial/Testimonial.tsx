@@ -3,7 +3,7 @@ import React from "react";
 
 export const Testimonial = () => {
   return (
-    <div className="bg-custom-orange  rounded-md mt-16  flex justify-center items-center gap-20 md:gap-52  flex-col md:flex-row h-fit p-6 mx-3 md:mx-0 flex-wrap">
+    <div className="bg-custom-orange  rounded-md mt-16  flex justify-center items-center gap-10 md:gap-40  flex-col md:flex-row h-fit p-6 mx-3 md:mx-0 flex-wrap">
       <div className="flex flex-col justify-center items-center ">
         <StyledTypography
           text="546+"
