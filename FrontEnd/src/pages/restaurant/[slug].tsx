@@ -1,4 +1,4 @@
-import { Hero } from "@/collection/Restaurant";
+import { Hero, FoodItems } from "@/collection/Restaurant";
 import { Layout } from "@/components/Layout/Layout";
 import React from "react";
 
@@ -7,6 +7,7 @@ const restaurant = () => {
     <main>
       <Layout>
         <Hero />
+        <FoodItems />
       </Layout>
     </main>
   );

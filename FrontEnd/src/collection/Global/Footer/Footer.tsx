@@ -60,7 +60,7 @@ export const Footer = () => {
               />
             </div>
           </div>
-          <div className="flex justify-center items-center flex-col md:flex-row  gap-16 mr-24">
+          <div className="flex justify-center items-center flex-col md:flex-row  gap-16 mr-24 ">
             <div className="flex flex-col gap-3 ">
               <StyledTypography
                 variant="subtitle2"
@@ -77,9 +77,9 @@ export const Footer = () => {
               <StyledTypography
                 variant="subtitle2"
                 text="Important Links"
-                className="text-xl font-bold cursor-default"
+                className="text-xl font-bold cursor-default "
               />
-              <ul className="flex flex-col gap-3 underline">
+              <ul className="flex flex-col gap-3 underline ">
                 {footerLinks[1].links.map((link) => (
                   <li key={link.id}>{link.name}</li>
                 ))}

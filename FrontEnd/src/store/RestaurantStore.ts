@@ -1,12 +1,12 @@
 import { create } from "zustand";
-import { restaurantData, RestaurantState } from "./restaurantData";
+import { restaurantData, RestaurantProps } from "./restaurantData";
 
-interface RestaurantStateProps {
-  restaurant: RestaurantState[];
-  findRestaurant: (slug: string) => RestaurantState | undefined;
+interface RestaurantStoreProps {
+  restaurant: RestaurantProps[];
+  findRestaurant: (slug: string) => RestaurantProps | undefined;
 }
 
-export const useRestaurantStore = create<RestaurantStateProps>((set) => ({
+export const useRestaurantStore = create<RestaurantStoreProps>((set) => ({
   restaurant: restaurantData,
   findRestaurant: (slug: string) => {
     const foundRestaurant = restaurantData.find(

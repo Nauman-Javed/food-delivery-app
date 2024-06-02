@@ -3,16 +3,21 @@ import React from "react";
 
 export const Testimonial = () => {
   return (
-    <div className="bg-custom-orange  rounded-md mt-16  flex justify-center items-center gap-20 md:gap-52  flex-col md:flex-row h-fit p-6 mx-3 md:mx-0">
+    <div className="bg-custom-orange  rounded-md mt-16  flex justify-center items-center gap-20 md:gap-52  flex-col md:flex-row h-fit p-6 mx-3 md:mx-0 flex-wrap">
       <div className="flex flex-col justify-center items-center ">
         <StyledTypography
           text="546+"
           variant="subtitle1"
           color={"white"}
           fontWeight={"normal"}
-          fontSize={"48px"}
           lineHeight={"50px"}
           className="cursor-default"
+          sx={{
+            fontSize: {
+              xs: "30px",
+              md: "40px",
+            },
+          }}
         />
         <StyledTypography
           text="Registered Riders"
@@ -21,8 +26,8 @@ export const Testimonial = () => {
           fontWeight={"normal"}
           sx={{
             fontSize: {
-              xs: "30px",
-              md: "18px",
+              xs: "25px",
+              md: "25px",
             },
           }}
           className="cursor-default"
@@ -34,7 +39,12 @@ export const Testimonial = () => {
           variant="subtitle1"
           color={"white"}
           fontWeight={"normal"}
-          fontSize={"48px"}
+          sx={{
+            fontSize: {
+              xs: "30px",
+              md: "40px",
+            },
+          }}
           lineHeight={"50px"}
           className="cursor-default"
         />
@@ -45,8 +55,8 @@ export const Testimonial = () => {
           fontWeight={"normal"}
           sx={{
             fontSize: {
-              xs: "30px",
-              md: "18px",
+              xs: "25px",
+              md: "25px",
             },
           }}
           className="cursor-default"
@@ -58,7 +68,12 @@ export const Testimonial = () => {
           variant="subtitle1"
           color={"white"}
           fontWeight={"normal"}
-          fontSize={"48px"}
+          sx={{
+            fontSize: {
+              xs: "30px",
+              md: "40px",
+            },
+          }}
           lineHeight={"50px"}
           className="cursor-default"
         />
@@ -69,8 +84,8 @@ export const Testimonial = () => {
           fontWeight={"normal"}
           sx={{
             fontSize: {
-              xs: "30px",
-              md: "18px",
+              xs: "25px",
+              md: "25px",
             },
           }}
           className="cursor-default"
@@ -82,7 +97,12 @@ export const Testimonial = () => {
           variant="subtitle1"
           color={"white"}
           fontWeight={"normal"}
-          fontSize={"48px"}
+          sx={{
+            fontSize: {
+              xs: "30px",
+              md: "40px",
+            },
+          }}
           lineHeight={"50px"}
           className="cursor-default"
         />
@@ -93,8 +113,8 @@ export const Testimonial = () => {
           fontWeight={"normal"}
           sx={{
             fontSize: {
-              xs: "30px",
-              md: "18px",
+              xs: "25px",
+              md: "25px",
             },
           }}
           className="cursor-default"
