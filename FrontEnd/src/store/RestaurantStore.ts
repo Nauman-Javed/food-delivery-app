@@ -1,14 +1,17 @@
-import create from "zustand";
-import { restaurantData, RestaurantState } from "./restaurantData";
+import { create } from "zustand";
+import { restaurantData, RestaurantProps } from "./restaurantData";
 
-interface RestaurantStateProps {
-  restaurant: RestaurantState | null;
-  setRestaurant: (restaurant: RestaurantState) => void;
+interface RestaurantStoreProps {
+  restaurant: RestaurantProps[];
+  findRestaurant: (slug: string) => RestaurantProps | undefined;
 }
 
-export const useRestaurantStore = create<RestaurantStateProps>((set) => ({
-  restaurant:
-    restaurantData.find((restaurant) => restaurant.slug === "default-slug") ||
-    null,
-  setRestaurant: (restaurant: RestaurantState) => set({ restaurant }),
+export const useRestaurantStore = create<RestaurantStoreProps>((set) => ({
+  restaurant: restaurantData,
+  findRestaurant: (slug: string) => {
+    const foundRestaurant = restaurantData.find(
+      (restaurant) => restaurant.slug === slug
+    );
+    return foundRestaurant;
+  },
 }));

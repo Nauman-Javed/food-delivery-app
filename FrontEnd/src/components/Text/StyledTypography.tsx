@@ -3,7 +3,7 @@ import { Typography, TypographyProps } from "@mui/material";
 import { styled } from "@mui/system";
 
 interface StyledTypographyProps extends TypographyProps {
-  text: string;
+  text: string | number;
   customStyle?: React.CSSProperties;
 }
 
