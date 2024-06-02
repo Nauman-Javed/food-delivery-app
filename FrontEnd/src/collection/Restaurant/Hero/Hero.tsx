@@ -23,8 +23,8 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className=" relative mt-5  h-[477px] border-2 border-gray-200 rounded-lg flex justify-between items-center mx-3 md:mx-0">
-      <div className="p-10 flex flex-col relative z-10 gap-0 md:gap-2 items-center md:items-start">
+    <div className=" relative mt-5  h-[477px] border-2 border-gray-200 rounded-lg flex justify-between items-center mx-3 md:mx-0 flex-col-reverse md:flex-row ">
+      <div className="p-4 md:p-10  flex flex-col relative z-10 gap-0 md:gap-2 items-center md:items-start w-full md:w-4/5">
         <StyledTypography
           text={restaurantName?.name ?? ""}
           variant="h2"
@@ -38,7 +38,7 @@ export const Hero = () => {
           color={"#FC8A06"}
           className="cursor-default text-[34px] md:text-6xl"
         />
-        <div className="bg-black w-80 rounded-full text-center mt-5">
+        <div className="bg-black w-2/3 md:w-2/6 rounded-full text-center mt-7">
           <StyledTypography
             text="Delivery in 20-25 Minutes"
             variant="body2"
@@ -49,7 +49,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="relative right-16 z-20 hidden md:block">
+      <div className="relative right-0 md:right-16 z-20 ">
         <Image
           src="/assets/RestaurantPage/smallLogo.svg"
           alt="Restaurant logo"

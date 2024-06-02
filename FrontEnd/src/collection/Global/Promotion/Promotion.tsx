@@ -66,7 +66,7 @@ export const Promotion = () => {
             onClick={toggleMenu}
           />
           {menuOpen && (
-            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-85 flex justify-center items-center">
+            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-85 flex justify-center items-center z-20">
               <Image
                 src={"/assets/LandingPage/cross.svg"}
                 alt="cross"
