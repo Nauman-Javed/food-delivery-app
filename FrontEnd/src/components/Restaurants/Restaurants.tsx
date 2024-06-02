@@ -5,13 +5,12 @@ import React from "react";
 interface RestaurantProps {
   image: string;
   slug: string;
-  path: string;
 }
 
-const Restaurants = (props: RestaurantProps) => {
-  const { image, slug, path } = props;
+export const Restaurants = (props: RestaurantProps) => {
+  const { image, slug } = props;
   return (
-    <Link href="/restaurant">
+    <Link href={`/restaurant/${slug}`} key={slug}>
       <div className="w-[150px] sm:w-[150px] md:w-[238px]">
         <Image
           src={image}
@@ -24,5 +23,3 @@ const Restaurants = (props: RestaurantProps) => {
     </Link>
   );
 };
-
-export default Restaurants;

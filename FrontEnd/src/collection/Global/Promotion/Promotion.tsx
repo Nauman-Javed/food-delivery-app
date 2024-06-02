@@ -35,14 +35,16 @@ export const Promotion = () => {
               className="mr-3 text-xs font-bold cursor-default"
               text="Regent Street, A4, A4201, London"
             />
-            <StyledTypography
-              text="Change Locations"
-              color={"#FC8A06"}
-              marginRight={"48px"}
-              fontSize={"12px"}
-              fontWeight={"bold"}
-              className="cursor-pointer"
-            />
+            <Link href={"/profile"}>
+              <StyledTypography
+                text="Change Locations"
+                color={"#FC8A06"}
+                marginRight={"48px"}
+                fontSize={"12px"}
+                fontWeight={"bold"}
+                className="cursor-pointer"
+              />
+            </Link>
           </div>
         </div>
       </div>

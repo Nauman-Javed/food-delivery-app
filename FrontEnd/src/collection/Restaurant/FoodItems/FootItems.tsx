@@ -1,3 +1,4 @@
+import { FootItemCard } from "@/components/FoodItemCard/FootItemCard";
 import StyledTypography from "@/components/Text/StyledTypography";
 import { useRestaurantStore } from "@/store/RestaurantStore";
 import { RestaurantProps } from "@/store/restaurantData";
@@ -84,55 +85,17 @@ export const FoodItems = () => {
             text="Burgers"
             className="text-3xl md:text-5xl font-bold mb-5 text-center md:text-start"
           />
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex flex-wrap md:gap-[4%] lg:gap-[2%]">
             {restaurantName?.foodItems.map((item) => {
               if (item.type == "Burgers") {
                 return (
-                  <div
-                    className="w-full sm:w-1/2 md:w-1/3 max-h-[245px] shadow-xl rounded-2xl p-5 flex"
-                    key={item.id}
-                  >
-                    <div className="w-1/2 h-full flex flex-col justify-between  py-6">
-                      <StyledTypography
-                        text={item.name}
-                        className="text-xl font-semibold cursor-default"
-                      />
-                      <StyledTypography
-                        text={item.description}
-                        className=" text-xs font-normal cursor-default"
-                      />
-                      <StyledTypography
-                        text={`PKR ${item.price}`}
-                        className="text-base font-bold cursor-default"
-                      />
-                    </div>
-                    <div className="w-1/2 ">
-                      <div className="relative">
-                        <Image
-                          src={item.image}
-                          alt="item Image"
-                          width={203}
-                          height={203}
-                        />
-                        <div className="absolute bottom-0 right-0 z-1">
-                          <Image
-                            src={"/assets/RestaurantPage/plusBackground.svg"}
-                            alt="plus Background"
-                            width={88}
-                            height={88}
-                          />
-                          <div className="absolute z-2 top-5 right-4">
-                            <Image
-                              src={"/assets/RestaurantPage/plus.svg"}
-                              alt="plus Background"
-                              width={49}
-                              height={49}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <FootItemCard
+                    id={item.id}
+                    description={item.description}
+                    image={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
                 );
               } else return null;
             })}
@@ -143,119 +106,42 @@ export const FoodItems = () => {
         <div className="mt-10">
           <StyledTypography
             text="Fries"
-            className="text-3xl md:text-5xl  font-bold mb-5 text-center md:text-start"
+            className="text-3xl md:text-5xl font-bold mb-5 text-center md:text-start"
           />
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex flex-wrap md:gap-[4%] lg:gap-[2%]">
             {restaurantName?.foodItems.map((item) => {
               if (item.type == "Fries") {
                 return (
-                  <div
-                    className="w-full sm:w-1/2 md:w-1/3 h-[245px] shadow-xl rounded-2xl p-5 flex"
-                    key={item.id}
-                  >
-                    <div className="w-1/2 h-full flex flex-col justify-between py-6">
-                      <StyledTypography
-                        text={item.name}
-                        className="text-xl font-semibold cursor-default"
-                      />
-                      <StyledTypography
-                        text={item.description}
-                        className=" text-xs font-normal cursor-default"
-                      />
-                      <StyledTypography
-                        text={`PKR ${item.price}`}
-                        className="text-base font-bold cursor-default"
-                      />
-                    </div>
-                    <div className="w-1/2 ">
-                      <div className="relative">
-                        <Image
-                          src={item.image}
-                          alt="item Image"
-                          width={203}
-                          height={203}
-                        />
-                        <div className="absolute bottom-0 right-0 z-1">
-                          <Image
-                            src={"/assets/RestaurantPage/plusBackground.svg"}
-                            alt="plus Background"
-                            width={88}
-                            height={88}
-                          />
-                          <div className="absolute z-2 top-5 right-4">
-                            <Image
-                              src={"/assets/RestaurantPage/plus.svg"}
-                              alt="plus Background"
-                              width={49}
-                              height={49}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <FootItemCard
+                    id={item.id}
+                    description={item.description}
+                    image={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
                 );
               } else return null;
             })}
           </div>
         </div>
       ) : null}
-
       {activeMenu.name === "All" || activeMenu.name === "Juices" ? (
         <div className="mt-10">
           <StyledTypography
             text="Juices"
-            className="text-3xl md:text-5xl  font-bold mb-5 text-center md:text-start"
+            className="text-3xl md:text-5xl font-bold mb-5 text-center md:text-start"
           />
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex flex-wrap md:gap-[4%] lg:gap-[2%]">
             {restaurantName?.foodItems.map((item) => {
               if (item.type == "Juices") {
                 return (
-                  <div
-                    className="w-full sm:w-1/2 md:w-1/3 h-[245px] shadow-xl rounded-2xl p-5 flex justify-between"
-                    key={item.id}
-                  >
-                    <div className="w-1/2 h-full flex flex-col justify-between py-6">
-                      <StyledTypography
-                        text={item.name}
-                        className="text-xl font-semibold cursor-default"
-                      />
-                      <StyledTypography
-                        text={item.description}
-                        className=" text-xs font-normal cursor-default"
-                      />
-                      <StyledTypography
-                        text={`PKR ${item.price}`}
-                        className="text-base font-bold cursor-default"
-                      />
-                    </div>
-                    <div className="w-1/2 ">
-                      <div className="relative">
-                        <Image
-                          src={item.image}
-                          alt="item Image"
-                          width={203}
-                          height={203}
-                        />
-                        <div className="absolute bottom-0 right-0 z-1">
-                          <Image
-                            src={"/assets/RestaurantPage/plusBackground.svg"}
-                            alt="plus Background"
-                            width={88}
-                            height={88}
-                          />
-                          <div className="absolute z-2 top-5 right-4">
-                            <Image
-                              src={"/assets/RestaurantPage/plus.svg"}
-                              alt="plus Background"
-                              width={49}
-                              height={49}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <FootItemCard
+                    id={item.id}
+                    description={item.description}
+                    image={item.image}
+                    name={item.name}
+                    price={item.price}
+                  />
                 );
               } else return null;
             })}
