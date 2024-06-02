@@ -82,7 +82,7 @@ export const SignupPage = () => {
           </div>
           <div className="mb-3">
             <label htmlFor="password" className="text-gray-500">
-              Password
+              Password (min 8 characters)
             </label>
             <Field
               type="password"

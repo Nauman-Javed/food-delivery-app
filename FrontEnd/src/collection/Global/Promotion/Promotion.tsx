@@ -1,14 +1,15 @@
 import StyledTypography from "@/components/Text/StyledTypography";
+import { Modal } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
 export const Promotion = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [open, setOpen] = React.useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <>
@@ -65,19 +66,14 @@ export const Promotion = () => {
             alt="hamburger"
             width={65}
             height={100}
-            onClick={toggleMenu}
+            onClick={handleOpen}
           />
-          {menuOpen && (
-            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-85 flex justify-center items-center z-20">
-              <Image
-                src={"/assets/LandingPage/cross.svg"}
-                alt="cross"
-                width={65}
-                height={100}
-                onClick={toggleMenu}
-                className="absolute top-0 right-0"
-              />
-
+          {open && (
+            <Modal
+              open={open}
+              onClose={handleClose}
+              className="flex justify-center items-center"
+            >
               <Link
                 href="/login"
                 className="flex items-center gap-2 bg-black text-white rounded-full px-8 py-3"
@@ -87,10 +83,10 @@ export const Promotion = () => {
                   width={30}
                   height={100}
                   alt="user"
-                />{" "}
+                />
                 Login/Signup
               </Link>
-            </div>
+            </Modal>
           )}
         </div>
       </div>

@@ -27,7 +27,9 @@ export const StyledForm: React.FC<FormComponentProps> = ({
         {children}
         <button
           type="submit"
-          className="w-full h-10 bg-[#FC8A06] rounded-md text-white font-semibold"
+          className={`w-full h-10 ${
+            buttonText == "Update" ? "bg-custom-green" : "bg-custom-orange"
+          } rounded-md text-white font-semibold}`}
         >
           {buttonText}
         </button>
