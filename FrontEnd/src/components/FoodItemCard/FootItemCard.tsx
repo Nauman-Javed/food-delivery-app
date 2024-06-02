@@ -13,10 +13,7 @@ interface FoodItemsProps {
 export const FootItemCard = (props: FoodItemsProps) => {
   const { id, name, description, price, image } = props;
   return (
-    <div
-      className="w-full md:w-[48%] lg:w-[32%] max-h-[245px] shadow-xl rounded-2xl p-5 flex "
-      key={id}
-    >
+    <div className="w-full md:w-[48%] lg:w-[32%] max-h-[245px] shadow-xl rounded-2xl p-5 flex ">
       <div className="w-1/2 h-full flex flex-col justify-between  py-6">
         <StyledTypography
           text={name}

@@ -95,6 +95,7 @@ export const FoodItems = () => {
                     image={item.image}
                     name={item.name}
                     price={item.price}
+                    key={item.id}
                   />
                 );
               } else return null;
