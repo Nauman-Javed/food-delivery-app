@@ -77,7 +77,7 @@ export const LoginPage = () => {
           </div>
           <div className="mb-7">
             <label htmlFor="password" className="text-gray-500">
-              Password
+              Password (min 8 characters)
             </label>
             <Field
               type="password"

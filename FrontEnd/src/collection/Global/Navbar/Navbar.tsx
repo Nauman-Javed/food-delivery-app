@@ -19,7 +19,10 @@ export const Navbar = () => {
         </Link>
       </div>
       <div className="flex md:hidden w-full">
-        <div className="flex md:hidden h-[77px] bg-custom-orange justify-start w-1/2 p-5 items-center ">
+        <Link
+          href="/profile"
+          className="flex md:hidden h-[77px] bg-custom-orange justify-start w-1/2 p-5 items-center "
+        >
           <Avatar
             alt="profile"
             src="/assets/Global/location.svg"
@@ -29,7 +32,8 @@ export const Navbar = () => {
             text="Name"
             className="text-[14px] font-semibold  ml-5 text-black"
           />
-        </div>
+        </Link>
+
         <div className="bg-custom-green items-center justify-center flex w-1/2">
           <div>
             <Badge badgeContent={4} color="info">
