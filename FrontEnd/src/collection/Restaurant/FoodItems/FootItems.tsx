@@ -60,7 +60,7 @@ export const FoodItems = () => {
   return (
     <div className="mt-10 mx-3 md:mx-0 ">
       <div className="bg-[#F3F3F3] flex justify-center items-center p-5 rounded-xl ">
-        <ul className="flex gap-20 font-semibold">
+        <ul className="flex gap-10 md:gap-20 font-semibold">
           {menu.map((menuItem) => {
             return (
               <li
@@ -82,14 +82,14 @@ export const FoodItems = () => {
         <div className="mt-10">
           <StyledTypography
             text="Burgers"
-            className="text-5xl font-bold mb-5"
+            className="text-3xl md:text-5xl font-bold mb-5 text-center md:text-start"
           />
           <div className="flex gap-2 flex-wrap">
             {restaurantName?.foodItems.map((item) => {
               if (item.type == "Burgers") {
                 return (
                   <div
-                    className="w-1/3 h-[245px] shadow-xl rounded-2xl p-5 flex"
+                    className="w-full sm:w-1/2 md:w-1/3 max-h-[245px] shadow-xl rounded-2xl p-5 flex"
                     key={item.id}
                   >
                     <div className="w-1/2 h-full flex flex-col justify-between  py-6">
@@ -141,13 +141,16 @@ export const FoodItems = () => {
       ) : null}
       {activeMenu.name === "All" || activeMenu.name === "Fries" ? (
         <div className="mt-10">
-          <StyledTypography text="Fries" className="text-5xl font-bold mb-5" />
+          <StyledTypography
+            text="Fries"
+            className="text-3xl md:text-5xl  font-bold mb-5 text-center md:text-start"
+          />
           <div className="flex gap-2 flex-wrap">
             {restaurantName?.foodItems.map((item) => {
               if (item.type == "Fries") {
                 return (
                   <div
-                    className="w-1/3 h-[245px] shadow-xl rounded-2xl p-5 flex"
+                    className="w-full sm:w-1/2 md:w-1/3 h-[245px] shadow-xl rounded-2xl p-5 flex"
                     key={item.id}
                   >
                     <div className="w-1/2 h-full flex flex-col justify-between py-6">
@@ -200,13 +203,16 @@ export const FoodItems = () => {
 
       {activeMenu.name === "All" || activeMenu.name === "Juices" ? (
         <div className="mt-10">
-          <StyledTypography text="Juices" className="text-5xl font-bold mb-5" />
+          <StyledTypography
+            text="Juices"
+            className="text-3xl md:text-5xl  font-bold mb-5 text-center md:text-start"
+          />
           <div className="flex gap-2 flex-wrap">
             {restaurantName?.foodItems.map((item) => {
               if (item.type == "Juices") {
                 return (
                   <div
-                    className="w-1/3 h-[245px] shadow-xl rounded-2xl p-5 flex justify-between"
+                    className="w-full sm:w-1/2 md:w-1/3 h-[245px] shadow-xl rounded-2xl p-5 flex justify-between"
                     key={item.id}
                   >
                     <div className="w-1/2 h-full flex flex-col justify-between py-6">
