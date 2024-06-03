@@ -33,7 +33,8 @@ const menu: footItemsProps[] = [
 
 export const FoodItems = () => {
   const [activeMenu, setActiveMenu] = useState<footItemsProps>(menu[0]);
-
+  const router = useRouter();
+  const { slug } = router.query;
   const [restaurantName, setRestaurantName] =
     useState<RestaurantProps | null>();
 
@@ -46,10 +47,7 @@ export const FoodItems = () => {
         setRestaurantName(restaurantFound);
       }
     }
-  }, []);
-
-  const router = useRouter();
-  const { slug } = router.query;
+  }, [slug]);
 
   const handleActiveMenu = (name: string) => {
     const selectedMenu = menu.find((item) => item.name === name);
