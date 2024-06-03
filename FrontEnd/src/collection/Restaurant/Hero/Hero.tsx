@@ -20,7 +20,7 @@ export const Hero = () => {
         setRestaurantName(restaurantFound);
       }
     }
-  }, [slug]);
+  }, []);
 
   return (
     <div className=" relative mt-5  h-[477px] border-2 border-gray-200 rounded-lg flex justify-between items-center mx-3 md:mx-0 flex-col-reverse md:flex-row ">

@@ -47,7 +47,7 @@ export const FoodItems = () => {
         setRestaurantName(restaurantFound);
       }
     }
-  }, [slug]);
+  }, []);
 
   const handleActiveMenu = (name: string) => {
     const selectedMenu = menu.find((item) => item.name === name);
@@ -117,6 +117,7 @@ export const FoodItems = () => {
                     image={item.image}
                     name={item.name}
                     price={item.price}
+                    key={item.id}
                   />
                 );
               } else return null;
@@ -140,6 +141,7 @@ export const FoodItems = () => {
                     image={item.image}
                     name={item.name}
                     price={item.price}
+                    key={item.id}
                   />
                 );
               } else return null;
