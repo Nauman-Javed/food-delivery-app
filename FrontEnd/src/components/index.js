@@ -4,3 +4,4 @@ export * from "./Form";
 export * from "./FoodItemCard";
 export * from "./Restaurants";
 export * from "./HamburgerModal";
+export * from "./CustomStepper";

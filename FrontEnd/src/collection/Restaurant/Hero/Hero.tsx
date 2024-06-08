@@ -5,13 +5,16 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
-export const Hero = () => {
+interface slugProps {
+  slug: string;
+}
+
+export const Hero = ({ slug }: slugProps) => {
+  console.log(slug);
   const { findRestaurant } = useRestaurantStore();
   const [restaurantName, setRestaurantName] = useState<RestaurantProps | null>(
     null
   );
-  const router = useRouter();
-  const { slug } = router.query;
 
   useEffect(() => {
     if (slug) {

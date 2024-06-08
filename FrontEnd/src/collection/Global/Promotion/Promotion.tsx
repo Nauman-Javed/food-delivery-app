@@ -5,7 +5,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 export const Promotion = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -23,6 +22,14 @@ export const Promotion = () => {
               </span>
             </p>
           </div>
+          {/* <div>
+            <a
+              href="/assets/CV.pdf"
+              download="Nauman's Resume (Front End Development).pdf"
+            >
+              Download CV
+            </a>
+          </div> */}
           <div className="flex items-center h-full">
             <Image
               src={"/assets/Global/Location.svg"}
@@ -70,6 +77,9 @@ export const Promotion = () => {
           />
           {open && (
             <Modal
+              style={{
+                backgroundColor: "#00000095",
+              }}
               open={open}
               onClose={handleClose}
               className="flex justify-center items-center"
