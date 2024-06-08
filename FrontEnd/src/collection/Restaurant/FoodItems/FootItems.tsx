@@ -11,6 +11,10 @@ interface footItemsProps {
   name: string;
 }
 
+interface slugProps {
+  slug: string;
+}
+
 const menu: footItemsProps[] = [
   {
     id: 1,
@@ -31,18 +35,22 @@ const menu: footItemsProps[] = [
   },
 ];
 
-export const FoodItems = () => {
+export const FoodItems = ({ slug }: slugProps) => {
   const [activeMenu, setActiveMenu] = useState<footItemsProps>(menu[0]);
-  const router = useRouter();
-  const { slug } = router.query;
+
   const [restaurantName, setRestaurantName] =
     useState<RestaurantProps | null>();
 
   const { findRestaurant } = useRestaurantStore();
 
   useEffect(() => {
+    console.log("useEffect working", slug);
+    console.log({ slug });
+
     if (slug) {
       const restaurantFound = findRestaurant(slug as string);
+      console.log({ restaurantFound });
+
       if (restaurantFound) {
         setRestaurantName(restaurantFound);
       }
@@ -64,9 +72,9 @@ export const FoodItems = () => {
             return (
               <li
                 key={menuItem.id}
-                className={`cursor-pointer p-1 rounded ${
+                className={`cursor-pointer p-1 px-5 rounded ${
                   activeMenu.id === menuItem.id
-                    ? "bg-black text-white rounded-full px-5"
+                    ? "bg-black text-white rounded-full "
                     : ""
                 } `}
                 onClick={() => handleActiveMenu(menuItem.name)}
