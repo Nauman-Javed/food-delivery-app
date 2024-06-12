@@ -95,11 +95,11 @@ export const Footer = () => {
             text="Order.uk Copyright 2024, All Rights Reserved."
             className="ml-9 cursor-default"
           />
-          <div className="mr-9 gap-5 hidden md:flex">
+          <div className="mr-9 gap-5 hidden lg:flex">
             <StyledTypography
               variant="subtitle2"
               text="Privacy Policy"
-              className="cursor-default"
+              className="cursor-default "
             />
             <StyledTypography
               variant="subtitle2"

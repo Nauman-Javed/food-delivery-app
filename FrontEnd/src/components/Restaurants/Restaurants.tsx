@@ -17,7 +17,7 @@ export const Restaurants = (props: RestaurantProps) => {
           alt=""
           width={238}
           height={10}
-          className="w-[350px] md:w-[238px]"
+          className="w-[350px] lg:w-[238px]"
         />
       </div>
     </Link>
