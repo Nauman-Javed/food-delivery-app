@@ -47,18 +47,17 @@ export const CustomStepper = ({ handleClose, open }: StepperProps) => {
   return (
     <Modal open={open} onClose={handleClose}>
       <div className="absolute top-2/4 left-2/4 w-[100%] lg:w-[40%]  bg-[#ffe6ff] border-8 border-[#77007a] p-4 -translate-x-1/2 -translate-y-1/2 rounded-xl h-[80%]">
-        <div className="mt-3 flex justify-between items-center w-[60%] h-[5%]">
+        <div className="mt-3 flex justify-between items-center h-[5%]">
           <Button
             color="inherit"
             disabled={activeStep === 0}
             onClick={handleBack}
-            sx={{ mr: 1 }}
           >
             <ArrowBackIosRoundedIcon />
           </Button>
           <StyledTypography
             text="Your Cart"
-            className="text-center text-2xl font-semibold "
+            className="text-center text-2xl font-semibold mr-4"
           />
         </div>
         <div className="mt-3 h-[5%]">
@@ -77,7 +76,7 @@ export const CustomStepper = ({ handleClose, open }: StepperProps) => {
           </Stepper>
         </div>
         <div className=" mt-5 h-[65%]">{renderStepContent(activeStep)}</div>
-        <div className="border-t-2 border-black w-[50%] m-auto mt-2"></div>
+        <div className="border-t-2 border-black w-[50%] m-auto"></div>
         <div className=" mt-5 h-[10%] p-2 flex justify-between items-center">
           <div className="flex flex-col gap-1">
             <StyledTypography

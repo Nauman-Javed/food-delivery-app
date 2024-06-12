@@ -20,7 +20,7 @@ export const MyOrder = () => {
 
   return (
     <div className="h-full overflow-y-scroll">
-      <div className="bg-white h-[20%] w-[100%] rounded-lg p-4 flex mb-4 shadow-custom-lrb">
+      <div className="bg-white h-[20%] w-[100%] rounded-lg p-3 md:p-4 flex mb-4 shadow-custom-lrb">
         <div className="w-[70%] lg:w-[75%] flex">
           <div className="">
             <Image
@@ -31,8 +31,14 @@ export const MyOrder = () => {
             />
           </div>
           <div className="ml-6">
-            <StyledTypography text="Food Item Name" className="font-semibold" />
-            <StyledTypography text="Price " className="font-medium" />
+            <StyledTypography
+              text="Food Item Name"
+              className="font-semibold text-sm lg:text-base"
+            />
+            <StyledTypography
+              text="Price "
+              className="font-medium text-sm lg:text-base"
+            />
           </div>
         </div>
         <div className="w-[30%] lg:w-[25%] flex justify-center items-center ">
@@ -42,7 +48,7 @@ export const MyOrder = () => {
             </IconButton>
             <StyledTypography
               text={count}
-              className="text-[#77007a] font-semibold"
+              className="text-[#77007a] font-semibold text-sm md:text-lg"
             />
 
             <IconButton onClick={handleIncrement}>
