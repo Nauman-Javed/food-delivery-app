@@ -10,7 +10,7 @@ interface FoodItemsProps {
   image: string;
 }
 
-export const FootItemCard = (props: FoodItemsProps) => {
+export const FoodItemCard = (props: FoodItemsProps) => {
   const { id, name, description, price, image } = props;
   return (
     <div className="w-full md:w-[48%] lg:w-[32%] max-h-[245px] shadow-xl rounded-2xl p-5 flex ">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import StyledTypography from "@/components/Text/StyledTypography";
-import { Badge } from "@mui/material";
+import { Badge, CircularProgress } from "@mui/material";
 import { CustomStepper } from "@/components/CustomStepper/CustomStepper";
 
 export const Navbar = () => {
@@ -74,7 +74,7 @@ export const Navbar = () => {
               </Link>
             </div>
             <div
-              className="bg-custom-green rounded-lg items-center justify-center hidden md:flex "
+              className="bg-black rounded-lg items-center justify-center hidden md:flex cursor-pointer"
               onClick={handleOpen}
             >
               <div className="p-3">
