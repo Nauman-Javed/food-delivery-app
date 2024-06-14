@@ -63,8 +63,8 @@ export const FoodItems = ({ slug }: slugProps) => {
 
   return (
     <div className="mt-10 mx-3 md:mx-0 ">
-      <div className="bg-[#F3F3F3] flex justify-center items-center p-5 rounded-xl ">
-        <ul className="flex gap-10 md:gap-20 font-semibold">
+      <div className="bg-[#F3F3F3] flex justify-center items-center p-5 rounded-xl">
+        <ul className="flex gap-4 md:gap-10 lg:gap-20 font-semibold ">
           {menu.map((menuItem) => {
             return (
               <li

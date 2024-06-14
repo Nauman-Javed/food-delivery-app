@@ -41,7 +41,7 @@ export const Navbar = () => {
           </Link>
 
           <div
-            className="bg-custom-green items-center justify-center flex w-1/2"
+            className="bg-black items-center justify-center flex w-1/2"
             onClick={handleOpen}
           >
             <div>
