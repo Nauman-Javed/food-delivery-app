@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import StyledTypography from "@/components/Text/StyledTypography";
-import { Badge, CircularProgress } from "@mui/material";
+import { Badge } from "@mui/material";
 import { CustomStepper } from "@/components/CustomStepper/CustomStepper";
 
 export const Navbar = () => {
